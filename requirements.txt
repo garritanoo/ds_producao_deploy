@@ -1,9 +1,8 @@
-<<<<<<< HEAD
 # This file may be used to create an environment using:
 # $ conda create --name <env> --file <this file>
 # platform: win-64
-numpy=1.24.3=py311hdab7c0b_1
-pandas=2.2.1=py311hea22821_0
+numpy=1.24.3
+pandas=2.2.1
 inflection=0.5.1
 flask=2.2.5
 xgboost=1.7.3
