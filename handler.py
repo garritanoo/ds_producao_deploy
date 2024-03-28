@@ -5,7 +5,7 @@ from flask import Flask, request, Response
 from rossmann.Rossmann import Rossmann
 
 # Carregando o modelo
-model = pickle.load(open('C:/Users/garri/Downloads/data_science/comunidadeds/7.data_science_producao/datasets/modelos/final/model_rossmann.pkl', 'rb'))
+model = pickle.load(open('model/model_rossmann.pkl', 'rb'))
 
 # Inicializando o API
 app = Flask(__name__)
@@ -40,4 +40,4 @@ def rossmann_predict():
         return Response('{}', status=200, mimetype='application/json')
 
 if __name__ == '__main__':
-    app.run('localhost')
+    app.run('0.0.0.0')
